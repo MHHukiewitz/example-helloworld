@@ -1,18 +1,26 @@
 use borsh::{BorshDeserialize, BorshSerialize};
-use solana_program::{
-    account_info::{next_account_info, AccountInfo},
-    entrypoint,
-    entrypoint::ProgramResult,
-    msg,
-    program_error::ProgramError,
-    pubkey::Pubkey,
-};
+use solana_program::{account_info::{next_account_info, AccountInfo}, declare_id, entrypoint, entrypoint::ProgramResult, msg, program_error::ProgramError, pubkey::Pubkey};
+use shank::{ShankAccount, ShankAccount, ShankType};
+
+declare_id!("FwXye6HbKxhvFrydCtbhM7m1b6ULpzHVkdAEqgWqMd7");
 
 /// Define the type of state stored in accounts
-#[derive(BorshSerialize, BorshDeserialize, Debug)]
+#[derive(BorshSerialize, BorshDeserialize, Debug, ShankAccount)]
 pub struct GreetingAccount {
     /// number of greetings
     pub counter: u32,
+}
+
+#[derive(Debug, Clone, ShankInstruction, BorshSerialize, BorshDeserialize)]
+#[rustfmt::skip]
+pub enum HelloInstruction {
+    #[account(0, signer, name="greeter", desc = "Account which greets")]
+    Count(CountArgs)
+}
+
+#[derive(Debug, Clone, ShankType, BorshSerialize, BorshDeserialize)]
+pub struct CountArgs {
+
 }
 
 // Declare and export the program's entrypoint
