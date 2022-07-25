@@ -3,7 +3,7 @@ updates:
 - package-ecosystem: cargo
   directory: "/src/program-rust"
   schedule:
-    interval: daily
+    interval: weekly
     time: "01:00"
     timezone: America/Los_Angeles
   labels:
