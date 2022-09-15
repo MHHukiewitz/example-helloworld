@@ -3,7 +3,7 @@ updates:
 - package-ecosystem: cargo
   directory: "/src/program-rust"
   schedule:
-    interval: weekly
+    interval: monthly
     time: "01:00"
     timezone: America/Los_Angeles
   labels:
@@ -12,7 +12,7 @@ updates:
 - package-ecosystem: npm
   directory: "/"
   schedule:
-    interval: daily
+    interval: monthly
     time: "01:00"
     timezone: America/Los_Angeles
   labels:
