@@ -192,6 +192,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "borsh"
+version = "0.10.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "822462c1e7b17b31961798a6874b36daea6818e99e0cb7d3b7b0fa3c477751c3"
+dependencies = [
+ "borsh-derive 0.10.0",
+ "hashbrown 0.11.2",
+]
+
+[[package]]
 name = "borsh-derive"
 version = "0.9.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2109,7 +2119,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f55a64726bfffacf62fdca86e9d56e04bedc4c50fc0b7ec103cde15a9978c111"
 dependencies = [
  "bincode",
- "borsh",
+ "borsh 0.9.3",
  "borsh-derive 0.9.3",
  "futures",
  "mio",
@@ -2176,7 +2186,7 @@ dependencies = [
 name = "solana-bpf-helloworld"
 version = "0.0.1"
 dependencies = [
- "borsh",
+ "borsh 0.10.0",
  "borsh-derive 0.10.0",
  "solana-program",
  "solana-program-test",
@@ -2339,7 +2349,7 @@ dependencies = [
  "base64 0.13.0",
  "bincode",
  "blake3",
- "borsh",
+ "borsh 0.9.3",
  "borsh-derive 0.9.3",
  "bs58 0.3.1",
  "bv",
@@ -2466,7 +2476,7 @@ dependencies = [
  "assert_matches",
  "base64 0.13.0",
  "bincode",
- "borsh",
+ "borsh 0.9.3",
  "borsh-derive 0.9.3",
  "bs58 0.4.0",
  "bv",
