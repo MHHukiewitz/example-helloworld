@@ -193,11 +193,11 @@ dependencies = [
 
 [[package]]
 name = "borsh"
-version = "0.10.0"
+version = "0.10.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "822462c1e7b17b31961798a6874b36daea6818e99e0cb7d3b7b0fa3c477751c3"
+checksum = "4114279215a005bc675e386011e594e1d9b800918cea18fcadadcce864a2046b"
 dependencies = [
- "borsh-derive 0.10.0",
+ "borsh-derive 0.10.3",
  "hashbrown 0.11.2",
 ]
 
@@ -216,12 +216,12 @@ dependencies = [
 
 [[package]]
 name = "borsh-derive"
-version = "0.10.0"
+version = "0.10.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "37626c9e941a687ee9abef6065b44c379478ae563b7483c613dd705ef1dff59e"
+checksum = "0754613691538d51f329cce9af41d7b7ca150bc973056f1156611489475f54f7"
 dependencies = [
- "borsh-derive-internal 0.10.0",
- "borsh-schema-derive-internal 0.10.0",
+ "borsh-derive-internal 0.10.3",
+ "borsh-schema-derive-internal 0.10.3",
  "proc-macro-crate",
  "proc-macro2 1.0.27",
  "syn 1.0.73",
@@ -240,9 +240,9 @@ dependencies = [
 
 [[package]]
 name = "borsh-derive-internal"
-version = "0.10.0"
+version = "0.10.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "61820b4c5693eafb998b1e67485423c923db4a75f72585c247bdee32bad81e7b"
+checksum = "afb438156919598d2c7bad7e1c0adf3d26ed3840dbc010db1a882a65583ca2fb"
 dependencies = [
  "proc-macro2 1.0.27",
  "quote 1.0.9",
@@ -262,9 +262,9 @@ dependencies = [
 
 [[package]]
 name = "borsh-schema-derive-internal"
-version = "0.10.0"
+version = "0.10.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c76cdbfa13def20d1f8af3ae7b3c6771f06352a74221d8851262ac384c122b8e"
+checksum = "634205cc43f74a1b9046ef87c4540ebda95696ec0f315024860cad7c5b0f5ccd"
 dependencies = [
  "proc-macro2 1.0.27",
  "quote 1.0.9",
@@ -2186,8 +2186,8 @@ dependencies = [
 name = "solana-bpf-helloworld"
 version = "0.0.1"
 dependencies = [
- "borsh 0.10.0",
- "borsh-derive 0.10.0",
+ "borsh 0.10.3",
+ "borsh-derive 0.10.3",
  "solana-program",
  "solana-program-test",
  "solana-sdk",
